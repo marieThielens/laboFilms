@@ -28,7 +28,7 @@ const Accueil = (props) => {
 
         <View style={styles.container}>
 
-            <Text style={styleGlobal.titre}>Bienvennue sur  MaWiPe Movie</Text>
+            <Text style={styleGlobal.titre}>Bienvennue sur {"\n"} MaWiPe Movie</Text>
             
             <Image style={styles.stretch} source={require('../images/popcorn.png')} />
         </View>
