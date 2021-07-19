@@ -4,6 +4,7 @@ import { SafeAreaView, StatusBar, StyleSheet, Text, useColorScheme, View } from 
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 import Accueil from './src/conteneur/Accueil';
 import styleGlobal from './src/styleGlobal';
+import TopNav from './src/navigation/TopNav';
 
 
 // import Recherche from './src/conteneur/Recherche';
