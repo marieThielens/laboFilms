@@ -8,18 +8,14 @@ const Tab = createMaterialTopTabNavigator()
 
 const TopNav = () => {
     return (
-        <NavigationContainer>
-            <Tab.Navigator initialLayout="filmPopulaire">
-                <Tab.Screen name="filmPopulaire" component={FilmPopulaire} options={{
-                    title: "Films populaires"
-                }}/>
-                <Tab.Screen name="sortieRecente" component={SortieRecente} options={{
-                    title: "Sorties récentes"
-                }}/>
-            </Tab.Navigator>
-        </NavigationContainer>
-        
-        
+        <Tab.Navigator initialLayout="filmPopulaire">
+            <Tab.Screen name="filmPopulaire" component={FilmPopulaire} options={{
+                title: "Films populaires"
+            }}/>
+            <Tab.Screen name="sortieRecente" component={SortieRecente} options={{
+                title: "Sorties récentes"
+            }}/>
+        </Tab.Navigator>
     )
 }
 
