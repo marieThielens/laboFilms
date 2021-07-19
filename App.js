@@ -2,6 +2,7 @@
 import React from 'react';
 import { SafeAreaView, StatusBar, StyleSheet, Text, useColorScheme, View } from 'react-native';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
+import TopNav from './src/navigation/TopNav';
 
 
 const App = () => {
@@ -15,7 +16,7 @@ const App = () => {
   return (
     <SafeAreaView style={backgroundStyle}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-
+      <TopNav/>
     </SafeAreaView>
   );
 };
