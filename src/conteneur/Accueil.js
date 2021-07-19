@@ -6,11 +6,12 @@ const Accueil = ( ) => {
     return (
 
         <View>
-            <Image source={require(')} />
-        </View>
-    
-        <Text>
+             <Text>
             MaWiPe Movie
         </Text>
+        </View>
     
-);}
+       
+    
+)}
+export default Accueil;
