@@ -11,8 +11,8 @@ const Accueil = (props) => {
           paddingTop: 50,
           justifyContent: 'center',
           alignItems: 'center',
-       
-        },
+         },
+         
         stretch: {
           paddingTop: 150,
           width: 300,
@@ -28,7 +28,7 @@ const Accueil = (props) => {
 
         <View style={styles.container}>
 
-            <Text>Bienvennue sur MaWiPe Movie</Text>
+            <Text style={styleGlobal.titre}>Bienvennue sur {"\n"} MaWiPe Movie</Text>
             
             <Image style={styles.stretch} source={require('./popcorn.png')} />
         </View>
