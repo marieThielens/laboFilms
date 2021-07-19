@@ -14,12 +14,13 @@ const Accueil = (props) => {
          },
          
         stretch: {
-          paddingTop: 150,
+          marginTop: 50,
           width: 300,
           height: 300,
           resizeMode: 'stretch',
           justifyContent: 'center',
           alignItems: 'center',
+
           
         },
       });
