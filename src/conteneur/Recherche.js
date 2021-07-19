@@ -2,6 +2,9 @@ import React , { useState } from 'react';
 import { View, TextInput, Button, Text, FlatList } from 'react-native';
 import styleGlobal from '../styleGlobal';
 
+import DetailFilm from './DetailFilms';
+import { filmApi } from '../api/FilmApi';
+
 const Recherche = () => {
 
     const [ films, setFilms ] = useState([]);
@@ -26,9 +29,10 @@ const Recherche = () => {
           data={ films }
           keyExtractor={ (item) => item.id.toString()}
         //   mon component <FilmItem  la var de data = item
-          renderItem={({item}) => <FilmItem mesFilms={item}/> }
+          renderItem={({item}) => <DetailFilm mesFilms={item}/> }
         />
   </View>
+
 
     )
 }

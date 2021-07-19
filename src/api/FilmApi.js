@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { ActivityIndicator, FlatList, Text, View } from 'react-native';
-import axios from 'axios';
 
 const MON_API = "040be6ed973ee07470f83d3d9cb13d36";
 

@@ -6,6 +6,8 @@ import Accueil from './src/conteneur/Accueil';
 import styleGlobal from './src/styleGlobal';
 
 
+// import Recherche from './src/conteneur/Recherche';
+import BottomNav from './src/navigation/BottomNav';
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -18,7 +20,8 @@ const App = () => {
   return (
     <SafeAreaView style={backgroundStyle}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-<Accueil></Accueil>
+      {/* <Recherche /> */}
+      <BottomNav />
 
     </SafeAreaView>
   );
