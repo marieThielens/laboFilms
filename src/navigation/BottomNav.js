@@ -12,22 +12,22 @@ const Tab = createBottomTabNavigator();
 const BottomNav = () => {
     return(
         <NavigationContainer>
-            <Tab.Navigator>
+            <Tab.Navigator initialRouteName="Accueil" >
                 <Tab.Screen name="Recherche" component={Recherche} options= {{
                     title: "Recherche",
                     tabBarIcon : ({ color, size }) => (
-                        <Text>Recherche</Text>
+                        <Image source={require("../images/loupe.png")} style={{ width:size, height:size}}/>
                         ),
                 }}/>
                 <Tab.Screen name="Accueil" component={Accueil} options= {{
                     title: "Accueil",
                     tabBarIcon : ({ color, size }) => (
-                        <Text>A</Text>
+                        <Image source={require("../images/home.png")} style={{ width:size, height:size}}/>
                         ),
                 }}/>
-                <Tab.Screen name="Recent" component={Accueil} options= {{
+                <Tab.Screen name="Recent" component={TopNav} options= {{
                     tabBarIcon : ({color, size }) => (
-                        <Text>Recent</Text>
+                        <Image source={require("../images/fav.png")} style={{ width:size, height:size}}/>
                         ),
                 }}/>
             </Tab.Navigator>
