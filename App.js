@@ -2,6 +2,9 @@
 import React from 'react';
 import { SafeAreaView, StatusBar, StyleSheet, Text, useColorScheme, View } from 'react-native';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
+import Accueil from './src/conteneur/Accueil';
+import styleGlobal from './src/styleGlobal';
+
 
 
 const App = () => {
@@ -15,6 +18,7 @@ const App = () => {
   return (
     <SafeAreaView style={backgroundStyle}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
+<Accueil></Accueil>
 
     </SafeAreaView>
   );
