@@ -2,6 +2,13 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
     // Item film ............................
+    titre: {
+        fontSize:25,
+        textAlign: 'center',
+        fontWeight: 'bold',
+        marginTop: 5,
+        marginBottom: 5
+    },
 
     titre: {
       fontSize:25,
