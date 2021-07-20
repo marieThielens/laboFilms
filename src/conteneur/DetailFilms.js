@@ -9,6 +9,7 @@ const DetailFilm = ( film ) => {
     //const { film } = props;
     return (
         <View style={styleGlobal.film_container}>
+            
             <Image style={styleGlobal.image} source={{uri: imageApi(film.mesFilms.poster_path)}} />
             <View style={styleGlobal.content_container}>
                 <View style={styleGlobal.header_container}>
@@ -20,8 +21,9 @@ const DetailFilm = ( film ) => {
                     <Text style={styleGlobal.description_text} numberOfLines={6}>{film.mesFilms.overview}</Text>
                     {/* La propriété numberOfLines permet de couper un texte si celui-ci est trop long, il suffit de définir un nombre maximum de ligne */}
                 </View>
+                
                 <View style={styleGlobal.date_container}>
-                    <Text style={styleGlobal.date_text}>{film.release_date}</Text>
+                    <Text style={styleGlobal.date_text}>{film.mesFilms.release_date}</Text>
                 </View>
             </View>
         </View>
