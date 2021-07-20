@@ -5,8 +5,6 @@ import styleGlobal from '../styleGlobal';
 import DetailFilm from './DetailFilms';
 
 const FilmPopulaire = () => {
-
-    const MON_API = "040be6ed973ee07470f83d3d9cb13d36";
     
     // Requete API pour récupérer la data
     const [filmPopulaire, setFilmPopulaire] = useState([])
@@ -28,11 +26,13 @@ const FilmPopulaire = () => {
 
     return (
         <View>
-            <Text style={styleGlobal.titre}>Films populaires</Text>
+            
             <View style={{flexDirection: "row", alignSelf: "center"}}>
                 <View onTouchEnd={handlePageLeft}>
                     <Image style={styleGlobal.imageArrowLeft} source={require("../images/leftAroow.png")}/>
                 </View>
+
+                <Text style={styleGlobal.titre}>Films populaires</Text>
 
                 <View onTouchEnd={handlePageRight}>
                     <Image style={styleGlobal.imageArrowRight} source={require("../images/rightArrow.png")}/>

@@ -64,13 +64,13 @@ export default StyleSheet.create({
       },
       imageArrowLeft: {
         margin: 8,
-        marginRight: 85,
+        marginRight: 60,
         width: 20,
         height: 20
       },
       imageArrowRight: {
         margin: 8,
-        marginLeft: 85,
+        marginLeft: 60,
         width: 20,
         height: 20,
         alignSelf: "flex-end"
