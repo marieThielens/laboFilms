@@ -1,5 +1,5 @@
 import React , { useEffect, useState } from 'react';
-import { View, TextInput, Button, Text, FlatList, Image } from 'react-native';
+import { View, TextInput, Button, Text, FlatList, Image, Keyboard } from 'react-native';
 import styleGlobal from '../styleGlobal';
 
 import DetailFilm from './DetailFilms';
@@ -19,6 +19,7 @@ const Recherche = () => {
       }, [page, loadFilm]); 
 
     const montrerFilms = () => {
+        Keyboard.dismiss()
         setLoadFilm(previous => !previous)
         setPage(1)
     }
