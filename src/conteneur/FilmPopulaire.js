@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { FlatList, Text, View } from 'react-native';
-<<<<<<< Updated upstream
-=======
 import { filmPopulaireApi } from '../api/FilmApi';
 import DetailFilm from './DetailFilms';
->>>>>>> Stashed changes
 
 const FilmPopulaire = () => {
 
@@ -24,7 +21,7 @@ const FilmPopulaire = () => {
                 keyExtractor={ (item) => item.id.toString()}
         //   mon component <FilmItem  la var de data = item
                 renderItem={({item}) => {
-                    return <Text>{item.original_title}</Text>
+                    return <DetailFilm mesFilms={item}/>
                 } }
             />
         </View>
