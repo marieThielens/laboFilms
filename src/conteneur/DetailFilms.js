@@ -44,7 +44,7 @@ const DetailFilm = ( film ) => {
                         {/* La propriété numberOfLines permet de couper un texte si celui-ci est trop long, il suffit de définir un nombre maximum de ligne */}
                     </View>
                     <View style={styleGlobal.date_container}>
-                        <Text style={styleGlobal.date_text}>{film.release_date}</Text>
+                        <Text style={styleGlobal.date_text}>{film.mesFilms.release_date}</Text>
                     </View>
                 </View>
             </View>
