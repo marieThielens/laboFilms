@@ -6,8 +6,6 @@ import DetailFilm from './DetailFilms';
 
 const SortieRecente = (props) => {
 
-    const MON_API = "040be6ed973ee07470f83d3d9cb13d36";
-
     // Requete API pour récupérer la data
     const [filmsRecents, setFilmsRecents] = useState([])
     const [page, setPage] = useState(1)
@@ -28,11 +26,14 @@ const SortieRecente = (props) => {
 
     return (
         <View>
-            <Text style={styleGlobal.titre}>Sorties récentes</Text>
+            
             <View style={{flexDirection: "row", alignSelf: "center"}}>
+                
                 <View onTouchEnd={handlePageLeft}>
                     <Image style={styleGlobal.imageArrowLeft} source={require("../images/leftAroow.png")}/>
                 </View>
+
+                <Text style={styleGlobal.titre}>Sorties récentes</Text>
 
                 <View onTouchEnd={handlePageRight}>
                     <Image style={styleGlobal.imageArrowRight} source={require("../images/rightArrow.png")}/>

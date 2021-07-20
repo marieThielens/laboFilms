@@ -38,12 +38,14 @@ const Recherche = () => {
         <View>
             <Text style={styleGlobal.titre}>Trouver un film</Text>
             <TextInput style={styleGlobal.input} placeholder='Titre du film' value={inputCherche} onChangeText={(text) => setInputCherche(text)} />
-            <Button title='Rechercher' onPress={montrerFilms}/>
+            
 
             <View style={{flexDirection: "row", alignSelf: "center"}}>
                 <View onTouchEnd={handlePageLeft}>
                     <Image style={styleGlobal.imageArrowLeft} source={require("../images/leftAroow.png")}/>
                 </View>
+
+                <Button title='Rechercher' onPress={montrerFilms}/>
 
                 <View onTouchEnd={handlePageRight}>
                     <Image style={styleGlobal.imageArrowRight} source={require("../images/rightArrow.png")}/>
