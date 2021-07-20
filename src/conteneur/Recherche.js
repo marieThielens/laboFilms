@@ -20,8 +20,8 @@ const Recherche = () => {
 
     const montrerFilms = () => {
         Keyboard.dismiss()
-        setLoadFilm(previous => !previous)
         setPage(1)
+        setLoadFilm(previous => !previous)
     }
 
     const handlePageLeft = () => {
