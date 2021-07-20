@@ -61,5 +61,18 @@ export default StyleSheet.create({
       date_text: {
         textAlign: 'right',
         fontSize: 14
+      },
+      imageArrowLeft: {
+        margin: 8,
+        marginRight: 85,
+        width: 20,
+        height: 20
+      },
+      imageArrowRight: {
+        margin: 8,
+        marginLeft: 85,
+        width: 20,
+        height: 20,
+        alignSelf: "flex-end"
       }
 })
