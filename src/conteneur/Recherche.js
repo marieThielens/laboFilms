@@ -12,7 +12,8 @@ const Recherche = () => {
   
     const montrerFilms = () => {
         filmApi(inputCherche).then(films => {
-        setFilms(films.results) // dans l'api les films sont stoqué dans un tableau results   
+        setFilms(films.results) // dans l'api les films sont stoqué dans un tableau results
+    console.log(films.results);
     });
 }   
     
