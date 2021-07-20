@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { FlatList, Text, View } from 'react-native';
+import DetailFilm from './DetailFilms'
 
 const SortieRecente = (props) => {
 
@@ -26,8 +27,7 @@ const SortieRecente = (props) => {
                 data={ filmsRecents }
                 keyExtractor={ (item) => item.id.toString()}
                 renderItem={({item}) => {
-                    return <Text>{item.original_title}</Text>
-                    {/* <FilmItem mesFilms={item}/> */}
+                return    <DetailFilm mesFilms={item}/>
                 } }
             />
         </View>
