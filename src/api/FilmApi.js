@@ -38,6 +38,14 @@ export function filmPopulaireApi(page) {
     .catch((error) => console.error(error))
 }
 
+export function filmDetailApi (id) {
+    const url = "https://api.themoviedb.org/3/movie/" + id + "?language=fr&api_key=" + MON_API
+
+    return fetch(url)
+        .then((response) => response.json())
+        .catch((error) => console.error(error))
+}
+
 
 
 

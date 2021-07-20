@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Text, View,Image, StyleSheet } from "react-native";
 import styleGlobal from '../styleGlobal';
+
 
 
 const Accueil = (props) => { 
@@ -28,7 +29,7 @@ const Accueil = (props) => {
     return (
 
         <View style={styles.container}>
-
+         
             <Text style={styleGlobal.titre}>Bienvennue sur {"\n"} MaWiPe Movie</Text>
             
             <Image style={styles.stretch} source={require('../images/popcorn.png')} />
